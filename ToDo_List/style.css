@@ -1,0 +1,44 @@
+body{
+    margin:0;   /*body 초기 마진은 8pt*/
+    background-image: url("background.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;  /*view high : 높이만큼*/
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.task-area{
+    border: 1px solid lightgray;
+    margin-top: 2em;
+}
+
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position:relative;
+}
+.task-tabs div{
+    padding:1em;
+}
+
+#under-line{
+    height:4px;
+    background-color: rgb(0, 75, 122);
+    position: absolute;
+    width:48px;
+    left:2px;
+    top:45px;
+    padding:0px;
+}
+
+.tasks{
+    display: flex;
+    justify-content:space-between;
+    padding: 1em;
+}

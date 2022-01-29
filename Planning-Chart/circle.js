@@ -85,3 +85,5 @@ hour24.forEach(function(data){
     ctx.closePath();
     ctx.restore();
 })
+
+

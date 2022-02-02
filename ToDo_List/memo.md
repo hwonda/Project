@@ -1,4 +1,4 @@
-innerHTML과 textContent의 차이
+## innerHTML과 textContent의 차이
 innerHTML: Element의 HTML, XML을 읽어오거나, 설정할 수 있습니다. 태그 안에있는 HTML 전체 내용을 들고옴
 textContent: 해당 노드가 가지고 있는 텍스트 값을 그대로 가져옴.
 예시
@@ -29,3 +29,16 @@ function introduce(name,age){
    console.log(`제 이름은${name}이고 ${age}살 입니다`)
 }
 더이상 +로 문장을 이을필요가 없다
+
+## 객체
+
+- 할 일이 '끝났는지 안 끝났는지' 추가적인 정보를 가지고 있어야 함.
+- 그냥 String으로는 표현이 안 됨.
+- task 객체에서 표현되는 console 값
+```
+[{…}]
+0: {taskContent: '더하기', isComplete: false} 
+length: 1
+[[Prototype]]: Array(0)
+```
+- 한 객체에 

@@ -1,7 +1,7 @@
 let taskInput = document.getElementById("task-input");
 let addButton = document.getElementById("add-botton");
 let taskList = [];
-let mode = "All";   // 초기값 All 넣어야 처음 넣었을 때 All 화면이 나옴
+let mode = "all";   // 초기값 all 넣어야 처음 넣었을 때 All 화면이 나옴
 let tabs = document.querySelectorAll(".task-tabs div")  // querySelectorAll 하면 모든 .task-tabs 아래의 div를 가져올 수 있음.
 let filterList = [];
 addButton.addEventListener("click", addTask);   // button click시 addTask 함수 실행.
@@ -97,6 +97,13 @@ function filter(event){
     console.log("filter클릭됨", event.target.id);  // click한 component 확인 
     filterList = [];   
     mode = event.target.id;
+    document.getElementById("under-line").style.width =
+        event.target.offsetWidth + "px";
+    document.getElementById("under-line").style.top =
+        event.target.offsetTop + 45 + "px";
+    document.getElementById("under-line").style.left =
+        event.target.offsetLeft + "px";
+
     if(mode == "all"){
         render();
     }else if(mode == "ongoing"){
